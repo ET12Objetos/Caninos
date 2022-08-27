@@ -1,10 +1,9 @@
 # Caninos
 
-## Problemas a solucionar
+## Ejecución del proyecto
 
-- Clase **Perro** puede ser instanciada
-- Métodos **Correr** y **Saltar** puede ser opcionales
+Desde la terminal ejercutar el siguiente comando:
 
-## Detalles
-
-- La raza de cada perro es pasada como parámetro, es posible obtener la raza sin pasarla por parámetro?
+```
+dotnet run --project Consola
+```
