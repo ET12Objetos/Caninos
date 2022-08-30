@@ -1,9 +1,7 @@
 # Caninos
 
-## Ejecución del proyecto
+- Clase **Perro** ahora es una clase abstracta
 
-Desde la terminal ejercutar el siguiente comando:
+- Clase **Perro** tiene métodos **Correr** y **Saltar** abstractos (obligatorios)
 
-```
-dotnet run --project Consola
-```
+- La raza ahora se obtiene del nombre de la clase => método **nameof**
