@@ -9,9 +9,23 @@ public abstract class Perro
 
     public Perro(string nombre, double peso, double energia)
     {
+        if (string.IsNullOrEmpty(nombre))
+            throw new ArgumentOutOfRangeException("El nombre no puede ser cadena vacia");
+
         this.nombre = nombre;
-        this.peso = peso;
+
+        //validaciones
+        if (peso > 0)
+            this.peso = peso;
+        else
+            throw new ArgumentOutOfRangeException("El peso no puede ser negativo");
+
+        if (energia <= 0)
+            throw new ArgumentOutOfRangeException("La energia no puede ser negativa");
+
         this.energia = energia;
+
+        this.raza = string.Empty;
     }
 
     public abstract void Correr();

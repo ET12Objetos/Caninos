@@ -1,6 +1,6 @@
 ﻿using Biblioteca;
 
-SanBernardo sanBernardo = new SanBernardo("Toby", 70, 39, 70);
+SanBernardo sanBernardo = new SanBernardo("Toby", 10, 39, 0);
 sanBernardo.Correr();
 sanBernardo.Saltar();
 Console.WriteLine(sanBernardo.Informar());

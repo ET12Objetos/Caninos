@@ -8,6 +8,10 @@ public class SanBernardo : Perro
     {
         //this.raza = "San Bernardo";
         this.raza = nameof(SanBernardo);
+
+        //validacion
+        if (altura <= 0)
+            throw new ArgumentOutOfRangeException("Rango altura incorrecto");
         this.altura = altura;
     }
 
